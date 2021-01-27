@@ -1,0 +1,56 @@
+package day7com.thikitive;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MyDB {
+	public static void main(String[] args) {
+		ResultSet rs;
+		try {
+			//REgister DRiver class
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			try {
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/amit","root","Amit@k123");
+		
+			
+			Statement st=con.createStatement();
+			st.execute("create table emp1 (eid int ,ename varchar(30),esalary  double)");
+			System.out.println("scussefully created table emp1");
+			st.execute("insert into emp1 values(1,'nitin',234)");
+			System.out.println("sucessfully inserted");
+			rs=st.executeQuery("select * from emp1");
+			//rs.close();
+		//	st.executeUpdate("delete from emp where eid=1");
+			System.out.println("deleted");
+			while(rs.next())
+			{
+				System.out.println(rs.getInt(1)+" "+rs.getString(2));
+			}
+			System.out.println("sucess");
+		//	con.close();
+			
+			
+			
+			} 
+			
+			
+			catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

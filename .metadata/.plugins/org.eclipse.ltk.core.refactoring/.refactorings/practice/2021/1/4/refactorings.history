@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;day7/src/day7com.thikitive&apos;&#x0A;- Original project: &apos;practice&apos;&#x0A;- Destination element: &apos;day7/src/day7com.thikitive&apos;&#x0A;- Original element: &apos;com.thinkitive.Employee.java&apos;" description="Copy compilation unit" destination="=day7/src&lt;day7com.thikitive" element1="/src&lt;com.thinkitive{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1611034127191" units="1" version="1.0"/>
+</session>

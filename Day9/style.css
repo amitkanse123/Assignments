@@ -1,0 +1,37 @@
+        /* body {
+    background-color: lightblue;
+} */
+        
+        input {
+            margin-top: 23px;
+        }
+        
+        .ab {
+            margin-left: auto;
+            margin-right: auto;
+            text-size: 40%;
+            font-size: 20px;
+            font-style: itali;
+            color: white
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* background-image: url(shoe);
+    background-repeat: no-repeat;
+    background-size: cover
+    }
+} */
+        }
+        
+        .fix {
+            widows: 200px;
+            margin: auto;
+            background-color: rgba(50, 52, 56, 0.199);
+        }
