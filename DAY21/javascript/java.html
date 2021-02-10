@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hello() {
+            var temp = Number(document.getElementById("id1").value);
+            var temp1 = Number(document.getElementById("id2").value);
+
+
+            document.getElementById("para").innerHTML = temp + temp1;
+
+
+        }
+
+        function bye() {
+            alert("bye bye")
+        }
+
+        function visible() {
+            document.getElementById("val1").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <input type="text" onchange="bye()" /> -->
+    <button onclick="hello()">Click it</button>
+    <input id="id1" type="number" />
+    <input id="id2" type="number" />
+    <P id="para">
+        </Pi>
+    </P>
+    <p id="val1">hii</p>
+    <p id="val2"></p>
+
+    <input type="button" value="click it to hide" onclick="visible()">>
+
+</body>
+
+</html>
